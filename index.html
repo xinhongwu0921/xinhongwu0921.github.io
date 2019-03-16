@@ -5,18 +5,18 @@
   
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Hexo</title>
+  <link rel="dns-prefetch" href="http://xinhongwu0921.github.io">
+  <title>辛洪伍的个人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:title" content="辛洪伍的个人博客">
+<meta property="og:url" content="http://xinhongwu0921.github.io/index.html">
+<meta property="og:site_name" content="辛洪伍的个人博客">
 <meta property="og:locale" content="default">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="辛洪伍的个人博客">
   
-    <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    <link rel="alternative" href="/atom.xml" title="辛洪伍的个人博客" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.png">
@@ -55,7 +55,7 @@
 			
 				<li><a href="/">主页</a></li>
 	        
-				<li><a href="/tags/随笔/">随笔</a></li>
+				<li><a href="/archives">所有文章</a></li>
 	        
 			</ul>
 		</nav>
@@ -79,15 +79,7 @@
 				
 					<a class="github" target="_blank" href="http://github.com/xinhongwu0921" title="github"><i class="icon-github"></i></a>
 		        
-					<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
-		        
-					<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
-		        
-					<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
-		        
 					<a class="jianshu" target="_blank" href="https://www.jianshu.com/u/63df37b07d52" title="jianshu"><i class="icon-jianshu"></i></a>
-		        
-					<a class="mail" target="_blank" href="mailto:xinhongwu777@qq.com" title="mail"><i class="icon-mail"></i></a>
 		        
 			</div>
 		</nav>
@@ -124,15 +116,7 @@
 					
 						<a class="github" target="_blank" href="http://github.com/xinhongwu0921" title="github"><i class="icon-github"></i></a>
 			        
-						<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
-			        
-						<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
-			        
-						<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
-			        
 						<a class="jianshu" target="_blank" href="https://www.jianshu.com/u/63df37b07d52" title="jianshu"><i class="icon-jianshu"></i></a>
-			        
-						<a class="mail" target="_blank" href="mailto:xinhongwu777@qq.com" title="mail"><i class="icon-mail"></i></a>
 			        
 				</div>
 			</nav>
@@ -143,7 +127,7 @@
 				
 					<li style="width: 50%"><a href="/">主页</a></li>
 		        
-					<li style="width: 50%"><a href="/tags/随笔/">随笔</a></li>
+					<li style="width: 50%"><a href="/archives">所有文章</a></li>
 		        
 				</ul>
 			</nav>
@@ -180,7 +164,44 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <p>记录一下搭建自己博客的过程</p>
+<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><p>在开始之前,你必须准备好以下环境</p>
+<blockquote>
+<p>1 你需要github账号(需要配置好ssh,)</p>
+<p>2 安装了nodejs</p>
+<p>3 安装git</p>
+</blockquote>
+<h2 id="一-hexo的使用"><a href="#一-hexo的使用" class="headerlink" title="一 hexo的使用"></a>一 <a href="http://hexo.io" target="_blank" rel="noopener">hexo</a>的使用</h2><p>Hexo是一个简单、快速、强大的基于 Github Pages 的博客发布工具，支持Markdown格式，有众多优秀插件和主题。 </p>
+<h3 id="1-1安装"><a href="#1-1安装" class="headerlink" title="1.1安装"></a>1.1安装</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo</span><br></pre></td></tr></table></figure>
+<p>###1.2初始化</p>
+<p>新建一个文件夹,例如 <code>hexo</code>,在这个文件夹中右键 –&gt;<code>git bash</code>进入窗口后执行命令</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init(初始化)</span><br></pre></td></tr></table></figure>
+<p>初始化完后执行下面两个命令</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g (生成)</span><br><span class="line">hexo s (启动服务)</span><br></pre></td></tr></table></figure>
+<p>###1.3 查看和修改主题</p>
+<p>执行后打开浏览器访问 <a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a>  ,在本地查看博客首页,如果端口被占用可以用<code>hexo s -p 5000</code> 修改端口号,默认的主题不好看,你可以修改,<a href="https://hexo.io/themes/" target="_blank" rel="noopener">官方主题</a> 可以选择自己喜欢的,我的是<a href="https://github.com/litten/hexo-theme-yilia" target="_blank" rel="noopener">hexo-theme-yilia</a> </p>
+<p>使用主题首先要下载</p>
+<p><code>git clone https://github.com/litten/hexo-theme-yilia.git themes/yilia</code></p>
+<p>修改<code>_config.yml</code>中的<code>theme: landscape</code>改为<code>theme: yilia</code>，然后重新执行<code>hexo g</code>来重新生成。</p>
+<p>如果出现一些莫名其妙的问题，可以先执行<code>hexo clean</code>来清理一下public的内容，然后再来重新生成和发布。</p>
+<p>主题的样式在theme–&gt;yilia文件夹下的<code>_config.yml</code>中修改</p>
+<h2 id="二-上传到github"><a href="#二-上传到github" class="headerlink" title="二 上传到github"></a>二 上传到github</h2><h3 id="2-1-安装上传工具"><a href="#2-1-安装上传工具" class="headerlink" title="2.1 安装上传工具"></a>2.1 安装上传工具</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<p>###2.2 修改配置</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: git@github.com:xinhongwu0921/xinhongwu0921.github.io.git</span><br><span class="line">  branch: master</span><br><span class="line">  注意`:`后要空格</span><br></pre></td></tr></table></figure>
+<p>###2.3 创建github仓库,</p>
+<p>仓库名必须为<code>github账号名.github.io</code>,如<code>xinhongwu0921.github.io</code></p>
+<h3 id="2-4-上传"><a href="#2-4-上传" class="headerlink" title="2.4 上传"></a>2.4 上传</h3><p>非常简单,使用命令就行</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo d</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>因为github是国外网站,可能要过一些时间才能访问</p>
+<p>访问:<code>仓库的名字</code></p>
+</blockquote>
+<h2 id="三-写博客"><a href="#三-写博客" class="headerlink" title="三 写博客"></a>三 写博客</h2><p>使用<code>hexo new &quot;postName&quot;</code>新建文章,会生成md文件在source/_posts下,可以使用typora打开进行写作,</p>
+<p>写完后依次执行</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g</span><br><span class="line">$ hexo s(如要在本地先查看)</span><br><span class="line">$ hexo d</span><br></pre></td></tr></table></figure>
+<p>hexo常用命令</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">hexo new &quot;postName&quot; #新建文章</span><br><span class="line">hexo new page &quot;pageName&quot; #新建页面</span><br><span class="line">hexo generate #生成静态页面至public目录</span><br><span class="line">hexo server #开启预览访问端口（默认端口4000，&apos;ctrl + c&apos;关闭server）</span><br><span class="line">hexo deploy #部署到GitHub</span><br><span class="line">hexo help  # 查看帮助</span><br><span class="line">hexo version  #查看Hexo的版本</span><br></pre></td></tr></table></figure>
+
       
 
       
@@ -188,6 +209,17 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -384,6 +416,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>
