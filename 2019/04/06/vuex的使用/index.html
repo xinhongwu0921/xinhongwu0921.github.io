@@ -6,19 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://xinhongwu0921.github.io">
-  <title>Tag: vue | 辛洪伍的个人博客</title>
+  <title>vuex的使用 | 辛洪伍的个人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="个人博客,记录学习过程,分享一些知识">
-<meta name="keywords" content="前端,html,css,vue,node">
-<meta property="og:type" content="website">
-<meta property="og:title" content="辛洪伍的个人博客">
-<meta property="og:url" content="http://xinhongwu0921.github.io/tags/vue/index.html">
+  <meta name="description" content="##一 vuex的一些知识 1.1 vuex是什么 Vuex 是一个专为 Vue.js 应用程序开发的状态管理模式。它采用集中式存储管理应用的所有组件的状态，并以相应的规则保证状态以一种可预测的方式发生变化。  ####1.2 安装  //npmnpm install vuex --save//yarnyarn add vuex在模块化中使用import Vue from &amp;#39;vue&amp;#39">
+<meta name="keywords" content="vue,随笔">
+<meta property="og:type" content="article">
+<meta property="og:title" content="vuex的使用">
+<meta property="og:url" content="http://xinhongwu0921.github.io/2019/04/06/vuex的使用/index.html">
 <meta property="og:site_name" content="辛洪伍的个人博客">
-<meta property="og:description" content="个人博客,记录学习过程,分享一些知识">
+<meta property="og:description" content="##一 vuex的一些知识 1.1 vuex是什么 Vuex 是一个专为 Vue.js 应用程序开发的状态管理模式。它采用集中式存储管理应用的所有组件的状态，并以相应的规则保证状态以一种可预测的方式发生变化。  ####1.2 安装  //npmnpm install vuex --save//yarnyarn add vuex在模块化中使用import Vue from &amp;#39;vue&amp;#39">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-04-06T13:25:04.504Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="辛洪伍的个人博客">
-<meta name="twitter:description" content="个人博客,记录学习过程,分享一些知识">
+<meta name="twitter:title" content="vuex的使用">
+<meta name="twitter:description" content="##一 vuex的一些知识 1.1 vuex是什么 Vuex 是一个专为 Vue.js 应用程序开发的状态管理模式。它采用集中式存储管理应用的所有组件的状态，并以相应的规则保证状态以一种可预测的方式发生变化。  ####1.2 安装  //npmnpm install vuex --save//yarnyarn add vuex在模块化中使用import Vue from &amp;#39;vue&amp;#39">
   
     <link rel="alternative" href="/atom.xml" title="辛洪伍的个人博客" type="application/atom+xml">
   
@@ -146,36 +147,108 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-vuex的使用" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      vuex的使用
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/04/06/vuex的使用/" class="archive-article-date">
+
+        
+        <a href="/2019/04/06/vuex的使用/" class="archive-article-date">
   	<time datetime="2019-04-06T13:19:46.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-06</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/04/06/vuex的使用/">vuex的使用</a>
-    </h1>
-  
+        
+		
 
-        <div class="article-info info-on-right">
-          
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>##一 vuex的一些知识</p>
+<h4 id="1-1-vuex是什么"><a href="#1-1-vuex是什么" class="headerlink" title="1.1 vuex是什么"></a>1.1 <a href="https://vuex.vuejs.org/zh/" target="_blank" rel="noopener">vuex</a>是什么</h4><blockquote>
+<p>Vuex 是一个专为 Vue.js 应用程序开发的状态管理模式。它采用集中式存储管理应用的所有组件的状态，并以相应的规则保证状态以一种可预测的方式发生变化。</p>
+</blockquote>
+<p>####1.2 安装</p>
+<blockquote>
+<p>//npm<br><code>npm install vuex --save</code><br>//yarn<br><code>yarn add vuex</code><br>在模块化中使用<br><code>import Vue from &#39;vue&#39;</code><br><code>import Vuex from &#39;vuex&#39;</code><br><code>Vue.use(Vuex)</code></p>
+</blockquote>
+<p>####1.3 什么时候使用</p>
+<blockquote>
+<p>当项目比较大时,各个组件之间有共享的数据时使用,例如购物车.</p>
+</blockquote>
+<p>##二 核心概念</p>
+<p>####state</p>
+<blockquote>
+<p>仓库,保存要共享的数据<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 仓库 数据定义在这个对象的内部</span></span><br><span class="line">   <span class="comment">// Vue实例的data属性</span></span><br><span class="line">   state: &#123;</span><br><span class="line">     info: <span class="string">'感觉自己萌萌哒'</span>,</span><br><span class="line">     num: <span class="number">10</span></span><br><span class="line">   &#125;,</span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<p>在组件中访问</p>
+<blockquote>
+<p><code>&lt;h2&gt;我是顶级的Vue实例--&lt;/h2&gt;</code></p>
+</blockquote>
+<p>####mutations</p>
+<blockquote>
+<p>更改state中的状态,也就是修改state中的数据,<br>回调函数(必须是同步函数),只能传两个参数,第一个是state,传多个,后面的是undefined,所以要传多个时,第二个可以传对象或数组;</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 提供的数据修改方法</span></span><br><span class="line">   mutations: &#123;</span><br><span class="line">     <span class="comment">// 参数1 固定是state就是 仓库内部的 state</span></span><br><span class="line">     addNum(state) &#123;</span><br><span class="line">       <span class="built_in">console</span>.log(state)</span><br><span class="line">       <span class="comment">// 在这里直接修改数据</span></span><br><span class="line">       state.num++</span><br><span class="line">     &#125;,</span><br><span class="line">     <span class="comment">// 接收参数</span></span><br><span class="line">     addNumPlus(state, num) &#123;</span><br><span class="line">       <span class="built_in">console</span>.log(num)</span><br><span class="line">       <span class="comment">// 累加传过来的值</span></span><br><span class="line">       state.num += num</span><br><span class="line">     &#125;,</span><br><span class="line">     <span class="comment">// 除了state之外只能接收一个参数 多余部分会变成undefined</span></span><br></pre></td></tr></table></figure>
+<p>注意当你动态的添加属性时,这个属性不是响应式的,需要使用<code>Vue.set(obj, &#39;newProp&#39;, 123)</code></p>
+<blockquote>
+<p>第一个参数表示要填加属性的对象<br>第二个参数表示要添加的属性名<br>第三个参数表示要添加的属性值</p>
+</blockquote>
+<p>在组件中使用<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">  addNum2() &#123;</span><br><span class="line">    <span class="comment">// 调用仓库方法</span></span><br><span class="line">    <span class="keyword">this</span>.$store.commit(<span class="string">'addNum'</span>)<span class="comment">//addNum为mutations中的回调函数名</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>这样使用比较麻烦,每次使用名字比较长,可以使用辅助函数<code>mapMutations</code>配合展开运算符<code>...</code><br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; mapMutations &#125; <span class="keyword">from</span> <span class="string">'vuex'</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">  methods: &#123;</span><br><span class="line">    ...mapMutations([</span><br><span class="line">      <span class="string">'increment'</span>, <span class="comment">// 将 `this.increment()` 映射为 `this.$store.commit('increment')`</span></span><br><span class="line"></span><br><span class="line">      <span class="comment">// `mapMutations` 也支持载荷：</span></span><br><span class="line">      <span class="string">'incrementBy'</span> <span class="comment">// 将 `this.incrementBy(amount)` 映射为 `this.$store.commit('incrementBy', amount)`</span></span><br><span class="line">    ]),</span><br><span class="line">    ...mapMutations(&#123;</span><br><span class="line">      add: <span class="string">'increment'</span> <span class="comment">// 将 `this.add()` 映射为 `this.$store.commit('increment')`</span></span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>###getters</p>
+<blockquote>
+<p>Vuex 允许我们在 store 中定义“getter”（可以认为是 store 的计算属性）。就像计算属性一样，getter 的返回值会根据它的依赖被缓存起来，且只有当它的依赖值发生了改变才会被重新计算。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Vuex的计算属性</span></span><br><span class="line">   getters: &#123;</span><br><span class="line">     <span class="comment">// 参数1 数据 state</span></span><br><span class="line">     biggerNum(state) &#123;</span><br><span class="line">       <span class="comment">// 返回num 并乘以2</span></span><br><span class="line">       <span class="keyword">return</span> state.num * <span class="number">2</span></span><br><span class="line">     &#125;</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<p>Getter 会暴露为 store.getters 对象，你可以以属性的形式在组件中访问这些值：</p>
+<blockquote>
+<p><code></code></p>
+</blockquote>
+<p>getters的辅助函数,使用之后组件中使用state中的名字就可以了<code></code><br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; mapGetters &#125; <span class="keyword">from</span> <span class="string">'vuex'</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">  computed: &#123;</span><br><span class="line">  <span class="comment">// 使用对象展开运算符将 getter 混入 computed 对象中</span></span><br><span class="line">    ...mapGetters([</span><br><span class="line">      <span class="string">'doneTodosCount'</span>,</span><br><span class="line">      <span class="string">'anotherGetter'</span>,</span><br><span class="line">      <span class="comment">// ...</span></span><br><span class="line">    ])</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>####actions</p>
+<blockquote>
+<p>actions类似于mutations,不同的是<br>Action 提交的是 mutation，而不是直接变更状态。<br>Action 可以包含任意异步操作。</p>
+</blockquote>
+<p><a href="https://vuex.vuejs.org/zh/guide/actions.html" target="_blank" rel="noopener">官方文档</a>说的很详细,这里就不记录了</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/img/alpay.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -191,61 +264,122 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://xinhongwu0921.github.io/2019/04/06/vuex的使用/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/03/25/vue-cli-3-0搭建vue项目/" class="archive-article-date">
-  	<time datetime="2019-03-25T12:04:05.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-25</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2019/03/25/vue-cli-3-0搭建vue项目/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">vue-cli 3.0搭建vue项目</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/03/25/vue-cli-3-0搭建vue项目/">vue-cli 3.0搭建vue项目</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">vue</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
+
+  
+  <div id="gitment-ctn"></div> 
+<link rel="stylesheet" href="https://billts.site/extra_css/gitment.css">
+<script src="https://billts.site/js/gitment.js"></script>
+<script>
+var gitment = new Gitment({
+  id: "Sat Apr 06 2019 21:19:46 GMT+0800",
+  owner: 'xinhongwu0921',
+  repo: 'xinhongwu0921.github.io',
+  oauth: {
+    client_id: '68dc733ee7efda5f44d1',
+    client_secret: '6a5cc9475eff44d628d1214c8cbe8403372cbdbc',
+  },
+})
+gitment.render('gitment-ctn')
+</script>
+  
 
 
           </div>
@@ -291,9 +425,9 @@ setInterval("createtime()",250);
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
